@@ -1,12 +1,12 @@
 # Minute Mate
 
 ## Project Overview
-Minute Mate is an AI-powered tool designed to automatically generate meeting minutes from recorded client and internal calls. It aims to streamline the process of summarizing key points, action items, and important discussions, allowing users to focus on the meeting itself rather than note-taking.
+Minute Mate is an AI-powered tool designed to automatically generate meeting minutes from recorded client and internal calls. It aims to streamline the process of summarising key points, action items, and important discussions, allowing users to focus on the meeting itself rather than note-taking.
 
 ## Features
-- **Automated Meeting Summaries:** Uses AI to transcribe and summarize meetings.
+- **Automated Meeting Summaries:** Uses AI to transcribe and summarise meetings.
 - **Action Item Extraction:** Identifies key tasks and responsibilities discussed during the meeting.
-- **Customizable Templates:** Offers flexible formatting for different types of meetings.
+- **Customisable Templates:** Offers flexible formatting for different types of meetings.
 - **Integration Options:** Planned integration with popular conferencing tools.
 - **Privacy and Compliance:** Ensures secure data handling and compliance with GDPR and data protection regulations.
 
