@@ -1,5 +1,7 @@
 Project Aims (15%)
+
 The aim of this project is to design and evaluate an AI-powered meeting assistant, MinuteMate, that automates the recording, transcription, and summarisation of business meetings. The goal is to address the challenges of manual note-taking by creating a scalable, reliable, and user-friendly solution that enhances productivity in professional service environments.
+
 The project will pursue the following five aims:
 To evaluate the technical feasibility of combining voice-to-text transcription and large language models (LLMs) to generate accurate, real-time meeting summaries.
 
