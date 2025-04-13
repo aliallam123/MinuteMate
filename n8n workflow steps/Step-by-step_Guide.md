@@ -2,5 +2,5 @@
 
 Step 1:
 
-Add a webhook as the first node
+Add a webhook as the first node, renamed it to 'Meeting Start Trigger.'
 ![image](https://github.com/user-attachments/assets/c7db5350-70de-469d-bf4a-dcee7d4c54ac)
