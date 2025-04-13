@@ -54,17 +54,12 @@ Now connect to the previous node:
 
 This node mimics encrypting the final summary for secure delivery or storage.
 ![image](https://github.com/user-attachments/assets/82e9a0a3-583c-436a-bd7c-a2b61ab18a6c)
-
-After adding that code, connect the node to the previous one and your workflow should look like this:
-![image](https://github.com/user-attachments/assets/2b5d26f2-488d-4cdb-b24a-6f0e48111dd1)
+Add the code and connect the node to the previous one and move onto the next step.
 
 ### Step 8: Deliver Summary Node
 
 This node simulates sending the encrypted summary to a stakeholder e.g., via email, Slack, or document storage.
 ![image](https://github.com/user-attachments/assets/b6e94502-44f7-44bb-ae7c-2bd9e0f90217)
-
-Current worflow:
-![image](https://github.com/user-attachments/assets/3cf41ab6-8c60-4c1d-ac9f-d3c9aa39b0fa)
 
 Now to test we need to resolve two issues:
 
