@@ -32,3 +32,13 @@ Now your workflow should look like this:
 
 This step simulates sending each cleaned audio segment to an emotion analysis API and getting back a mood label (e.g., "neutral", "laughing", "serious").
 
+Add another code snippet node, use this code:
+![image](https://github.com/user-attachments/assets/fd7b6a7a-f250-45ca-baeb-1460bee178c3)
+This code adds a simulated emotional label (e.g., “neutral”) to each cleaned segment to support tone-aware meeting summaries.
+
+#### At this point, all nodes should be connected except the first 'meeting start trigger node' because we are simulating inputs manually right now (not calling real APIs).
+
+Audio Capture is your first test node to generate dummy data.
+
+Now, your workflow should look like this:
+![image](https://github.com/user-attachments/assets/bca241d7-dbe1-4c49-b177-96e4174348d3)
