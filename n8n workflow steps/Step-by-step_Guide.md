@@ -23,6 +23,7 @@ This node simulates splitting the audio stream into smaller chunks for downstrea
 
 This node will connect to the previous node.
 ![image](https://github.com/user-attachments/assets/d160c4e7-85bd-4a0b-83f8-6dfdd811fb4c)
+This node takes each audio chunk and appends a “[cleaned]” tag to simulate preprocessing (e.g., removing filler words or identifying speakers).
 
 Now your workflow should look like this:
 ![image](https://github.com/user-attachments/assets/d3b7cd00-a81a-4b63-ad92-eec5942a7e3b)
