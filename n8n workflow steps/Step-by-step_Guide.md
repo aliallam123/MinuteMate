@@ -17,3 +17,4 @@ The code that I inputted simulates live meeting audio input for testing the Minu
 
 Add another Code snippet node with this code in:
 ![image](https://github.com/user-attachments/assets/1567fb46-81c6-4392-a1e2-18d7dbf4a0fa)
+This node simulates splitting the audio stream into smaller chunks for downstream processing.
