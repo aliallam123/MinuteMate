@@ -42,3 +42,43 @@ Audio Capture is your first test node to generate dummy data.
 
 Now, your workflow should look like this:
 ![image](https://github.com/user-attachments/assets/bca241d7-dbe1-4c49-b177-96e4174348d3)
+
+### Step 6: AI Summary Generator
+
+This is where we simulate sending the cleaned + emotion-tagged segments to GPT or Claude for summarisation.
+
+Add this code:
+![image](https://github.com/user-attachments/assets/aaef7c37-ae1d-409b-b1f6-b71cc8de8321)
+
+Now connect to the previous node:
+![image](https://github.com/user-attachments/assets/d26ffafd-f003-4e19-bc20-9d89e68bb559)
+
+### Step 7: Encrypt Output Node
+
+This node mimics encrypting the final summary for secure delivery or storage.
+![image](https://github.com/user-attachments/assets/82e9a0a3-583c-436a-bd7c-a2b61ab18a6c)
+
+After adding that code, connect the node to the previous one and your workflow should look like this:
+![image](https://github.com/user-attachments/assets/2b5d26f2-488d-4cdb-b24a-6f0e48111dd1)
+
+### Step 8: Deliver Summary Node
+
+This node simulates sending the encrypted summary to a stakeholder e.g., via email, Slack, or document storage.
+![image](https://github.com/user-attachments/assets/b6e94502-44f7-44bb-ae7c-2bd9e0f90217)
+
+Current worflow:
+![image](https://github.com/user-attachments/assets/3cf41ab6-8c60-4c1d-ac9f-d3c9aa39b0fa)
+
+Now to test we need to resolve two issues:
+
+1. The First Meeting Start Trigger node is not connected so the workflow won't run
+
+2. The last node does not finish/not connected to anything
+
+How to resolve both issues:
+
+1. Simply connect the First node (Meeting Start Trigger) to the Second node (Audio Capture) now by dragging the grey circle on the first node to the second
+
+2. You don’t need to manually “close” it just make sure It's the final node in the chain
+
+
