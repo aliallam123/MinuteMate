@@ -81,4 +81,5 @@ How to resolve both issues:
 
 2. You don’t need to manually “close” it just make sure It's the final node in the chain
 
-
+Now the workflow is ready to run! Let's click 'Test Workflow' and see what happens:
+![image](https://github.com/user-attachments/assets/6ff774f6-afca-4681-9c28-9c8eceb51f25)
