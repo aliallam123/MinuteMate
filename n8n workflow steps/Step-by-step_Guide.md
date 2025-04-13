@@ -83,3 +83,5 @@ How to resolve both issues:
 
 Now the workflow is ready to run! Let's click 'Test Workflow' and see what happens:
 ![image](https://github.com/user-attachments/assets/6ff774f6-afca-4681-9c28-9c8eceb51f25)
+![image](https://github.com/user-attachments/assets/0f1736a9-c067-4d9e-a20a-ec964720b824)
+### Success!
