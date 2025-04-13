@@ -8,3 +8,7 @@ This node simulates the start of a meeting (e.g., from Zoom or Teams)
 ![image](https://github.com/user-attachments/assets/c7db5350-70de-469d-bf4a-dcee7d4c54ac)
 
 ### Step 2: Add Audio Capture Node
+
+Add the Code snippet node (formely known as function) and use these settings:
+![image](https://github.com/user-attachments/assets/2a04d3dc-5621-4c42-85af-d593b45a6d92)
+The code that I inputted simulates live meeting audio input for testing the MinuteMate workflow.
