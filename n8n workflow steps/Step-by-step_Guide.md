@@ -28,3 +28,7 @@ This node takes each audio chunk and appends a “[cleaned]” tag to simulate p
 Now your workflow should look like this:
 ![image](https://github.com/user-attachments/assets/d3b7cd00-a81a-4b63-ad92-eec5942a7e3b)
 
+### Step 5: Emotion Detection Node
+
+This step simulates sending each cleaned audio segment to an emotion analysis API and getting back a mood label (e.g., "neutral", "laughing", "serious").
+
