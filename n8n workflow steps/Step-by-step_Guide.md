@@ -18,3 +18,12 @@ The code that I inputted simulates live meeting audio input for testing the Minu
 Add another Code snippet node with this code in:
 ![image](https://github.com/user-attachments/assets/1567fb46-81c6-4392-a1e2-18d7dbf4a0fa)
 This node simulates splitting the audio stream into smaller chunks for downstream processing.
+
+### Step 4: Context Preprocessing Node
+
+This node will connect to the previous node.
+![image](https://github.com/user-attachments/assets/d160c4e7-85bd-4a0b-83f8-6dfdd811fb4c)
+
+Now your workflow should look like this:
+![image](https://github.com/user-attachments/assets/d3b7cd00-a81a-4b63-ad92-eec5942a7e3b)
+
