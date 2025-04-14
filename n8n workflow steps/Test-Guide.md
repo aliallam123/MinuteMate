@@ -1,41 +1,63 @@
-# This is how to test the workflow we made (in Set-up-Guide.md) with Actual Data
+# This is how to test the workflow we made (in Set-up-Guide.md) with Real Data (using Hoppscotch)
 
-### Step 1: Go to your workflow:
+### Step 1: Recreate the Webhook Node
 
-![image](https://github.com/user-attachments/assets/955b0280-2f94-4bab-b077-c4c191012cff)
-Click the Meeting Start Trigger
+Delete the old Meeting Start Trigger node.
 
-You will see a Test URL custom to YOU, I will not show mine but copy the URL:
-![image](https://github.com/user-attachments/assets/1a4879be-df90-4e87-9fe6-2e52ca18c45a)
+Add a new Webhook node.
 
-### Step 2: Send Data Using Postman (or curl)
+Set method to POST.
 
-VERY IMPORTANT - go on Meeting Start Trigger node and set HTTP method from GET to POST
+Keep the default webhook path or rename it to something like start-meeting.
 
-Copy that URL and paste it in a browser
+You’ll now get a test webhook URL like:
 
-and at this at the end of the browser:
+https://aliallam.app.n8n.cloud/webhook-test/start-meeting
 
-?audio=This is a live test from Ali to simulate a real meeting summary.
+I changed the random letters and numbers to 'start-meeting' through 'path'
 
-Hit Enter.
+### Step 2: Click "Test Workflow"
 
-Go back to n8n, open the Executions tab at the top.
+Hit the orange Test Workflow button.
 
-Click the latest execution to view the workflow run.
+You should see “Waiting for webhook call…”
 
-### Step 3: Use Real Webhook Data Instead of Mock Output
+If you don’t see this, the webhook won’t work, go back and fix Step 1.
 
-Change the code for the Audio Capture Node to this:
+### Step 3: Send Real Input using Hoppscotch
 
-const input = $json.audio || "No audio input received";
-return [{ json: { audio: input } }];
+Go to https://hoppscotch.io
 
-This grabs whatever ?audio=... value is passed from the webhook.
+Set method to POST
 
-Changing the Audio Capture node to use webhook input does not break your workflow - it upgrades it to support both testing and real data.
+In the URL bar, paste your test webhook URL:
 
-This gives you real webhook input if it exists, but falls back to fake data if nothing is sent.
+https://aliallam.app.n8n.cloud/webhook-test/start-meeting
 
-Now test workflow again
-![image](https://github.com/user-attachments/assets/c85b2ef2-2eb6-4423-b7db-21a860f12ae8)
+Click Body and select JSON
+
+Paste this:
+
+{
+  "audio": "Ali is now testing the new webhook from scratch!"
+}
+
+Hit send
+
+![image](https://github.com/user-attachments/assets/40a6b76d-e112-464f-8050-a541805eb40e)
+
+Step 4 – Go Back to n8n and Check It Ran
+The workflow should execute immediately.
+
+Click Audio Capture and make sure your input came through correctly.
+
+You should see:
+
+{
+  "audio": "Ali is now testing the new webhook from scratch!"
+}
+
+![image](https://github.com/user-attachments/assets/87f2b907-4235-4eae-b828-3f341df87b3e)
+
+
+
