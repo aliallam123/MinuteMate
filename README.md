@@ -1,6 +1,6 @@
 # Minute Mate
 
-[https://github.com/aliallam123/MinuteMate/blob/main/Main%20Paper/MinuteMate%20Report.pdf]
+(Click here to read the report)[https://github.com/aliallam123/MinuteMate/blob/main/Main%20Paper/MinuteMate%20Report.pdf]
 
 ## Project Overview
 Minute Mate is an AI-powered tool designed to automatically generate meeting minutes from recorded client and internal calls. It aims to streamline the process of summarising key points, action items, and important discussions, allowing users to focus on the meeting itself rather than note-taking.
